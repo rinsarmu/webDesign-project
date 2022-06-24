@@ -1,0 +1,291 @@
+/* Author Robera Insarmu
+ Date Jun 24, 2022
+ Address: Jimma, Ethiopia 
+Cloned Page */
+
+/* Group style */
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    overflow-x: hidden;
+    font-family: sans-serif !important;
+}
+
+.label,
+.input,
+.active-label,
+.show-btn,
+.p-or::before,
+.p-or::after {
+    position: absolute;
+}
+
+.inputs,
+.input,
+.button,
+.btn-link,
+.normal-btn,
+.another-btn {
+    width:100%;
+}
+
+header,
+main,
+.form-section, 
+.btn-items,
+.or-cls, 
+.btn-item {
+    display: flex;
+}
+/* Group style ended */
+
+/* Logo  */
+header {
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600px;
+    color: #0a66c2;
+    margin: 2em 2em .7em;
+}
+.header-span {
+    background-color: #0a66c2 ;
+    color: #fff;
+    padding: 2px 3px;
+    margin: 2px;
+    font-size: 27px;
+    border-radius: 3px;
+    font-weight: bold;
+    /* letter-spacing: 2px; */
+}
+
+/* Logo ended */
+main{
+    flex-direction: column;
+    row-gap: 1em;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+
+.inner-main{
+    padding: 20px;
+    padding-bottom: 10px;
+    width: 370px;
+    /* width: 25%; */
+    box-shadow: 2px 1px 10px 2px #e2dddd;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.979) !important;
+    border-radius: 8px;
+    margin: auto 2px;
+}
+
+.sign-in{ 
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.stay-updated{
+    margin-top: 5px;
+    margin-bottom: 1.2em;
+}
+
+/* Form Section */
+
+.form-section, .btn-items{
+    width: calc(100%- 40px);
+    flex-direction: column;
+    row-gap: 0.8em;
+    margin-bottom: 0.6em;
+}
+
+.inputs{
+    position: relative;
+    height: 50px;
+}
+.input{
+    font-size: 16px;
+    top: 0px;
+    left: 0px;
+    height: 50px;
+    padding: 15px 14px 0px;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid #33363a9d;
+    background:none;
+    z-index:1;
+}
+.label{
+    top: 15px;
+    left: 14px;
+    z-index: 0;
+    background-color:white;
+    color:#393b41;
+}
+
+.active-label{
+    font-size: 14px;
+    padding: 1px 5px;
+    top: 7.5%;
+    left: 14px;
+    z-index: 10; 
+    background-color: #fff;
+    transition: 0.35s ease-in-out;
+}
+
+
+.input:focus{
+    border: 2px solid #0a66c2;
+    transition-duration: 167ms;
+}
+
+.show-btn{
+    top: 30%;
+    right: 10px;
+    border: none;
+    background-color: #fff;
+    color: #0a66c2;
+    font-weight: bold;
+    z-index: 10;
+    cursor: pointer;
+}
+.Forgot{
+    color: #0a66c2;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.button{
+    justify-content: center;
+    align-items: center;
+}
+
+.normal-btn{
+    background-color: #0a66c2;
+    height: 50px;
+   
+    outline: none;
+    border: 0px;
+    border: none;
+    border-radius: 28px;
+    font-size: 16px;
+    color: #fff;
+    transition-duration: 167ms;
+}
+
+.normal-btn:hover{
+    background-color: #0a4c8d; 
+}
+
+/* Form ended */
+
+/* Or class */
+.or-cls{
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2px;
+    margin-bottom: 0.6em;
+}
+
+.p-or{
+    font-size: 18px;
+    z-index: 11;
+    background-color: #fff;
+    padding: 0 3px;
+}
+
+.p-or::before,.p-or::after{
+    content: '';
+    top: 12px;
+    width: 150px;
+    background-color: rgba(51, 51, 51, 0.541);
+    height: 1px;
+}
+
+.p-or::before{
+    left: 0px;
+}
+
+.p-or::after{
+    right: 0px;
+}
+/* Or ended */
+
+/* button items */
+
+.another-btn{
+    background-color: #fff;
+    height: 45px;
+    outline: none;
+    border: 1px solid #33363a9d;  
+    border-radius: 21px;
+    font-size: 16px;
+    color: #333; 
+    font-weight: 800px; 
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.btn-item{
+    position: relative;
+    justify-content: center;
+    align-items: center; 
+}
+
+.btn-link{
+    text-decoration: none;
+}
+.google-logo{
+    width: 30px;
+}
+.fa-brands{
+    text-decoration: none;
+    text-transform: none;
+    font-size: 20px;
+    padding-right: 3px;
+    color: rgb(5, 4, 4);
+    text-decoration: none;
+    
+}
+
+.btns{
+    padding: 6px 8px; 
+     border-radius: 28px;
+}
+.btns:hover{
+    background-color: #8ec7ffe1;
+    opacity: 0.8;
+}
+
+.another-btn:hover{
+    border: 2px solid rgba(51, 51, 51, 0.726);
+}
+
+.new-to{
+    margin-top: 0.8em;
+}
+@media screen and (max-width: 760px){
+    .inner-main{
+        box-shadow: none;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .inner-main{
+        width:340px;
+        box-shadow: none;
+    }
+    
+}
